@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<style>
+div{
+      text-align :center;
+    }
+#login{
+    border: 1px solid black;
+    margin: 75px 380px 30px 380px;
+    background-color:none;
+}	
+button{
+     margin:25px;
+     width:200px;
+	 height:50px;	 
+}
+button.signup{
+background-color:DarkGrey;
+ font-size:30px;
+}
+label{
+font-size:30px;
+}
+input{
+width:300px;
+height:30px;
+font-size:20px;
+}
+</style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/A053357D-7ABE-B24E-B53D-EFB049F1AEBD/main.js" charset="UTF-8"></script>
+</head>
+<body background="house23.jpg">  
+     <div id="login">
+	      <br> <br> <br> 
+	     <button class="signup" ><a href="signuppage.html"style="text-decoration:none;">SIGNUP</a></button>
+		 <button class="login"  style="background-color:LightGray; font-size:30px;"><a href="loginpage.html"style="text-decoration:none;">LOGIN</a></button>
+		 <BR>
+		 <h1 style="font-size:40px;background-color:pink;">Welcome Back!</h1>
+		 <br>
+		 <form action="connection.php" method="POST">
+		    <div class="field-wrap">
+             <!-- <label>
+                Email Address<span class="req">*&nbsp&nbsp&nbsp&nbsp</span>
+              </label>-->
+            <input type="email" name="email" placeholder="Email Address" required autocomplete="off"/>
+          </div>
+		  <br>
+          <br>
+          <div class="field-wrap">
+          <!--  <label>
+              Enter Password<span class="req">*&nbsp&nbsp&nbsp</span>
+            </label>-->
+            <input type="password" name="pwd" placeholder="Enter Password"required>
+          </div><br>
+          
+          <button type="submit" class="button button-block"style="font-size:30px;"/>Login</button>
+
+		 </form>
+		 </div>
+
+</body>
+</html>

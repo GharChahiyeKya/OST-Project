@@ -1,0 +1,189 @@
+<html>
+   <head>
+     <title> House Selling Page</title>
+	 
+<style>
+body {
+	    color:white;
+        background-image: url("l.jpg");
+}
+</style>
+<style>
+    .topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ <!-- body
+  {
+     width:50%;
+     margin-left:250px;
+    
+  }-->
+button{
+    height:40px; 
+    width:100px; 
+    margin: 50px 50px; 
+    position:relative;
+    top:50%; 
+    left:30%;
+}
+
+  h1
+  {
+     text-align:center;
+     color:cyan;
+  }
+  .basic
+   {
+     border:5px groove gray;
+     padding-left:200px;
+     
+   
+   }
+   .topnav-right {
+  float: right;
+}
+ 
+</style>
+</head>
+<body>
+ 
+      <div class="topnav" id="myTopnav">
+  <a  href="start1.html">Home</a>
+ <!-- <a href="about.html">About</a>-->
+  <a href="sell.html">sell</a>
+  <a href="buy.html">Buy</a>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ <div class="topnav-right"> <a href="start4.html">Logout</a></div>
+  <!-- <a href="#contact">Contact Us</a>
+     <a href="#sell">Renting/Selling</a>-->
+</div> 
+
+
+<font color="white">
+<div class="image">
+<form action="selling.php" name="HouseInfo"  method="POST" enctype="multipart/form-data">
+
+   <h1> HOUSE INFO </h1>
+<!-- <img src= alt="House" width="600px" height="600px"> --><!--<tr><td>
+Location</td>
+<td><input type="text" name="location"  required><br /></td></tr><tr><td>
+Price</td>
+<td><input type="text" name="price" id="price" size="30" required><br /></td></tr>-->
+<div class="basic">
+<table>
+        <tr><td><h3>No Of BedRooms:</h3></td</tr>
+<tr>
+		<td><input type="radio" name="bedrooms" size="10" value="1BHK" required>1BHK </td>
+		<td><input type="radio" name="bedrooms" size="10" value="2BHK" required>2BHK </td>
+	    <td><input type="radio" name="bedrooms" size="10" value="1BHK" required>3BHK </td>
+</tr>
+</table>
+</div>
+ <div class="basic">
+   <table>
+ <tr>
+        <td><h3> Type of house:</h3> </td></tr>
+       <tr> 
+	   <td><input type="radio" name="type" value="individual" size="10" required>individual</td>
+	   <td> <input type="radio" name="type" value="apartment" size="10" required>apartment</td>
+       </tr>
+        
+  </table>
+   </div>
+
+
+     <div class="basic">
+   <table><tr>
+        <td><h3> Basic Amenities My house provide:</h3> </td></tr>
+       <tr> <td>WaterFacility </td>
+	   <td><input type="radio" name="type1" value="YES" size="10" required>YES</td>
+	   <td> <input type="radio" name="type1" value="NO" size="10" required>NO</td></tr>
+       <tr> <td>Transport </td>
+	   <td><input type="radio" name="type2" value="YES" size="10" required>YES</td>
+	   <td> <input type="radio" name="type2" value="NO" size="10" required>NO</td></tr> 
+       <tr> <td>Playing Area</td>
+	   <td><input type="radio" name="type3" value="YES" size="10" required>YES</td>
+	   <td> <input type="radio" name="type3" value="NO" size="10" required>NO</td></tr>	 
+       <tr> <td>Parking </td>
+	   <td><input type="radio" name="type4" value="YES" size="10" required>YES</td>
+	   <td> <input type="radio" name="type4" value="NO" size="10" required>NO</td></tr>   
+  </table>
+   </div>
+ <!--   <div class="basic">
+   <table><tr>
+      <td><h3>Extra Features my house has:</h3> </td></tr>
+	  <tr> <td>Swimming Pool </td>
+	   <td><input type="radio" name="type5" value="individual" size="10" required>YES</td>
+	   <td> <input type="radio" name="type5" value="apartment" size="10" required>NO</td></tr> 
+       <tr> <td>Well Furnished</td>
+	   <td><input type="radio" name="type6" value="individual" size="10" required>YES</td>
+	   <td> <input type="radio" name="type6" value="apartment" size="10" required>NO</td></tr> 
+       <tr> <td>Garden </td>
+	   <td><input type="radio" name="type7" value="individual" size="10" required>YES</td>
+	   <td> <input type="radio" name="type7" value="apartment" size="10" required>NO</td></tr>
+  </table>
+ </div>-->
+
+ <div class="basic">
+  
+
+    
+   <tr>
+      <td><h3>Home Construction type:</h3> </td></tr>
+      <tr><td> <input type="radio" name="construction" value="Adobe"required>Adobe </td></tr> <br>
+      <tr><td> <input type="radio" name="construction" value="Brick"required>Brick </td></tr><br>
+      <tr> <td> <input type="radio" name="construction" value="ConcreteBlock"required>ConcreteBlock </td> </tr><br>
+      <tr><td> <input type="radio" name="construction" value="metal"required>Metal </td></tr><br>
+      <tr><td> <input type="radio" name="construction" value="stone"required>Stone </td></tr><br>
+      <tr><td> <input type="radio" name="construction" value="wood"required>Wood </td></tr><br>
+
+  </table>
+</div><br>
+<div>
+<input type="file" name="image1" accept="image/*"  required style="font-size:18px;">
+<input type="file" name="image2" accept="image/*"  required style="font-size:18px;">
+<input type="file" name="image3"   style="font-size:18px;" accept="image/*">
+</div><br>
+<div>
+<tr><td size="30">Enter  City(in small letters):</td>
+<td><input type="text" name="location"  required><br /></td></tr><br>
+<tr><td size="30">Enter Area(in small letters):</td>
+<td><input type="text" name="area"  required><br /></td></tr><br>
+<tr>
+<td size="30"> Enter Price:(only numbers):</td>
+<td><input type="text" name="price" id="price" size="20" required><br /></td></tr><br>
+<tr>
+<td size="30"> Enter Contact No:</td>
+<td><input type="text" name="phoneno" id="number" size="20" required><br /></td></tr>
+</div>
+<button type="submit" name="submit" value="POST"  style="font-size:30px;">POST</button>
+</form>
+</font>
+ 
+</body>
+</html>

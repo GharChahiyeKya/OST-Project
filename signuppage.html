@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+		 <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/A053357D-7ABE-B24E-B53D-EFB049F1AEBD/main.js" charset="UTF-8"></script><script type="text/javascript">
+          function Validate(inputtext) {
+		     var mailformat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		   if (inputtext.value.match(mailformat))
+            {
+              
+           var password = document.getElementById("r").value;
+           var confirmPassword = document.getElementById("s").value;
+           if (password != confirmPassword) {
+		   document.getElementById("s").focus();
+            alert("Passwords did not match,please re-enter your password...");
+            return false;
+                }
+              return true;
+			  
+             }
+      else{
+    alert("please fill out proper email...!");
+    return (false);
+	}
+    }
+</script>
+<style>
+div{
+      text-align :center;
+    }
+#login5{
+    border: 1px solid black;
+    margin: 75px 380px 30px 380px;
+    background-color: ;
+}	
+button{
+     margin:25px;
+     width:200px;
+	 height:50px;
+	<!--background-color:magenta;-->
+	 
+}
+button.signup{
+background-color:LightGray;
+ font-size:30px;
+}
+
+label{
+background-color:skyblue;
+font-size:30px;
+}
+input{
+width:300px;
+ height:30px;
+ font-size:20px;
+}
+.field-wrap {
+  position:relative;
+ <!-- margin-bottom:40px;-->
+}
+</style>
+
+
+</head>
+<body background="house56.jpg">  
+     <div id="login5">
+	     <button class="signup" ><a  href="signuppage.html"style="text-decoration:none;">SIGN UP</a></button>
+		 <button class="login"  style="background-color:DarkGrey; font-size:30px;"><a href="loginpage.html"style="text-decoration:none;">LOGIN</a></button>
+		 <BR>
+		 <h1 style="font-size:40px;background-color:pink;">SIGN-UP FOR FREE</h1>
+		 
+		 <form name="form1" method="post" action="connect.php">
+		    <div class="field-wrap">
+             <!-- <label>
+                First Name<span class="req">*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+              </label>-->
+              <input type="text" name="firstname" placeholder="First Name" required autocomplete="off" /><br>
+            </div><br>
+		    <div class="field-wrap">
+              <!--<label>
+                Last Name<span class="req" >*&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+              </label>-->
+              <input type="text" name="lastname" placeholder="last Name" required autocomplete="off"/><br>
+            </div><br>
+			<div class="field-wrap">
+            <!--<label>
+              Email Address<span class="req">*&nbsp&nbsp</span>
+            </label>-->
+            <input type="email" name="emails" placeholder="email" id="h" required autocomplete="off"/>
+          </div>
+		  <br>
+          
+          <div class="field-wrap">
+           <!-- <label>
+              Set A Password<span class="req">*</span>
+            </label>-->
+            <input type="password" name="passwords" placeholder="password" id="r" required autocomplete="off"/>
+          </div><br>
+          <div class="field-wrap">
+            <!--<label>
+              Confirm Password<span class="req">*</span>
+            </label>-->
+            <input type="password" name="cpasswords" placeholder="confirm Password" id="s" required autocomplete="off"/>
+            </div><br>  
+	        <button class="signup1"  onclick="return Validate(document.form1.emails)"style="font-size:30px;" >Sign Up</button>
+			
+	  
+		
+		 </form>
+		 </div>
+
+
+</body>
+</html>
